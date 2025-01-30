@@ -1,0 +1,14 @@
+{
+    "name": "ppm-to-png-backend",
+    "version": "1.0.0",
+    "description": "Backend API for PPM to PNG conversion",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "express-fileupload": "^1.4.0"
+    }
+  }

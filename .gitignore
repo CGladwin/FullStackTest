@@ -1,0 +1,10 @@
+/backend/node_modules/
+
+# Executables
+*.exe
+*.bin
+*.out
+*.app
+
+# PPM files
+*.ppm
