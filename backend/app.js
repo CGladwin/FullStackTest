@@ -30,7 +30,7 @@ app.post("/upload", (req, res) => {
         }
 
         // Call the C++ program to convert PPM to PNG
-        exec(`./cpp/ppm2png ${uploadPath} ${outputPath}`, (error, stdout, stderr) => {
+        exec(`./cpp/ppm2png.bin ${uploadPath} ${outputPath}`, (error, stdout, stderr) => {
             if (error) {
                 console.error(`Error: ${stderr}`);
                 return res.status(500).send("Conversion failed.");

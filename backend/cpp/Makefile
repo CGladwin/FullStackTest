@@ -1,6 +1,6 @@
 # Compiler and flags
 CXX = g++
-CXXFLAGS = -std=c++11 -Wall -O2
+CXXFLAGS = -std=c++17 -Wall -O2
 
 # Source and output files
 SRC = ppm2png.cpp
