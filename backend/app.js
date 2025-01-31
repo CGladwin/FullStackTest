@@ -10,8 +10,8 @@ const PORT = 3000;
 // Middleware to handle file uploads
 app.use(fileUpload());
 
-// Serve static files from the "public" directory
-app.use(express.static(path.join(__dirname, "public")));
+// Serve static files from the "frontend" directory
+app.use(express.static(path.join(__dirname, "../frontend")));
 
 // Route to handle file upload and conversion
 app.post("/upload", (req, res) => {
@@ -52,7 +52,7 @@ app.post("/upload", (req, res) => {
 
 // Serve the frontend at the root path
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "index.html"));
+    res.sendFile(path.join(__dirname, "../frontend", "index.html"));
 });
 
 app.listen(PORT, () => {
